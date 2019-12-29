@@ -1,0 +1,13 @@
+# action.yml
+name: 'Rector'
+description: 'Process files using Rector'
+inputs:
+    args:
+        description: 'Arguments passed to rector binary'
+        required: true
+        default: 'process'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.args }}
