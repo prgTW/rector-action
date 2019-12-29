@@ -1,5 +1,8 @@
 # action.yml
-name: 'Rector'
+name: 'prgTW-rector'
+branding:
+    icon: check
+    color: green
 description: 'Process files using Rector'
 inputs:
     args:
