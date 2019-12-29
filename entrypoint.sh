@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-sh -c "bin/rector $*"
+sh -c "/rector/bin/rector $*"
