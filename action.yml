@@ -9,6 +9,9 @@ inputs:
         description: 'Arguments passed to rector binary'
         required: true
         default: 'process --dry-run --ansi'
+outputs:
+    exit_code:
+        description: Exit code from rector
 runs:
     using: 'docker'
     image: 'Dockerfile'
