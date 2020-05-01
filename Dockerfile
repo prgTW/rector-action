@@ -1,6 +1,6 @@
 FROM php:7.4-alpine
 
-ENV RECTOR_VERSION 0.6.4
+ENV RECTOR_VERSION 0.7.21
 
 RUN apk add --no-cache git
 
