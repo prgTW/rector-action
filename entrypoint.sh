@@ -1,7 +1,6 @@
-#!/bin/sh -l
+#!/bin/sh
 
-sh -c "php -v"
-sh -c "/rector/bin/rector --version"
-sh -c "/rector/bin/rector $*"
+/rector/bin/rector --version
+/rector/bin/rector $*
 RETVAL=$?
 echo "::set-output name=exit_code::${RETVAL}"
