@@ -5,6 +5,10 @@ branding:
     color: green
 description: 'Process files using Rector'
 inputs:
+    rector_version:
+        description: 'Rector version to be used'
+        required: false
+        default: 'master'
     args:
         description: 'Arguments passed to rector binary'
         required: true
@@ -15,5 +19,7 @@ outputs:
 runs:
     using: 'docker'
     image: 'Dockerfile'
+    env:
+        RECTOR_VERSION: ${{ inputs.rector_version }}
     args:
         - ${{ inputs.args }}
