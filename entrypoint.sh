@@ -1,7 +1,6 @@
 #!/bin/sh
 
-set -e
-set -eo pipefail
+set -euo pipefail
 
 RECTOR_VERSION=${RECTOR_VERSION:-master}
 
