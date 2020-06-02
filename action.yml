@@ -8,7 +8,7 @@ inputs:
     rector_version:
         description: 'Rector version to be used'
         required: false
-        default: 'dev-master'
+        default: 'master'
     args:
         description: 'Arguments passed to rector binary'
         required: true
