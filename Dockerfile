@@ -4,6 +4,7 @@ ENV RECTOR_VERSION ${RECTOR_VERSION:-dev-master}
 RUN addgroup -S -g 1000 rector && adduser -S -g rector -u 1000 rector
 
 RUN apk add --no-cache \
+	git \
 	libzip-dev \
     && docker-php-ext-install -j$(nproc) zip
 
